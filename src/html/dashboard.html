@@ -65,12 +65,61 @@
                     <button class="res-button"><span class="res-button-text">Neues Gericht</span></button>
                 </nav>
 
-                <!-- <section class="res-dash-block">
-                    <h2 class="res-dash-header">Bestellungen in Bearbeitung</h2>
-                    <div class="res-dash-card"></div>
-                </section> -->
+                <!-- CARD -->
+                <section class="res-dash-block">
+                    <h2 class="res-dash-h2-header">Bestellungen in Bearbeitung</h2>
+                    <div class="res-dash-card-wrapper">
+                        <!-- CARD ITSELF -->
+                        <div class="res-dash-card">
+                            <div class="res-dash-card-itemsNumber res-dash-card-itemsNumber-active">x39</div>
+                            <div class="res-dash-card-name-wrapper">
+                                <div class="res-dash-card-itemName">Würziger Soba Wok mit Garnelen</div>
+                                <div class="res-dash-card-itemCost">CHF <span>9.90</span></div>
+                            </div>
+                            <div class="res-dash-card-name-wrapper">
+                                <div class="res-dash-card-date"><span>Fr, 2 Oct</span></div>
+                                <div class="res-dash-card-time">
+                                    <div class="res-dash-card-time-inner">12.00 - 15.00</div>
+                                    <div class="res-dash-card-time-inner">16.00 - 17.00</div>
+                                </div>
+                            </div>
+                            <div class="res-dash-card-name-wrapper">
+                                <div class="res-dash-card-deliever">Liefern an <span>Neederrad</span></div>
+                            </div>
+                        </div>
+                        <!-- END OF CARD ITSELF -->
 
-                <section class="res-dash-block-empty">
+                        <div class="res-dash-card res-dash-card-with-label">
+                            <div class="res-dash-card-itemsNumber res-dash-card-itemsNumber-inactive">x39</div>
+                            <div class="res-dash-label-ordered">3 Portionen Bestellungen </div>
+                            <div class="res-dash-card-name-wrapper">
+                                <div class="res-dash-card-itemName">Würziger Soba Wok mit Garnelen</div>
+                                <img class="res-dash-card-menu-icon" href="" src="../assets/icons/menu.svg" alt="menu" onClick={console.log(1)}></img>
+                                <nav>
+                                    <ul class="res-dash-card-menu">
+                                        <li class="res-dash-card-menu-li"><a class="res-dash-card-menu-link">Bearbeiten</a></li>
+                                        <li class="res-dash-card-menu-li"><a class="res-dash-card-menu-link">Wiederholen</a></li>
+                                        <li class="res-dash-card-menu-li"><a class="res-dash-card-menu-link">Löschen</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="res-dash-card-name-wrapper">
+                                <div class="res-dash-card-date"><span>Fr, 2 Oct</span></div>
+                                <div class="res-dash-card-time">
+                                    <div class="res-dash-card-time-inner">12.00 - 15.00</div>
+                                    <div class="res-dash-card-time-inner">16.00 - 17.00</div>
+                                </div>
+                            </div>
+                            <div class="res-dash-card-name-wrapper">
+                                <div class="res-dash-card-deliever">Liefern an <span>Neederrad</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- END OF CARD -->
+
+                <!-- ADD NEW DISH PAGE -->
+                <!-- <section class="res-dash-block-empty">
                     <h2 class="res-dash-h2-header">Meine Terminplan</h2>
                     <div class="res-empty-block-wrapper">
                         <div class="res-empty-image"></div>
@@ -81,7 +130,8 @@
                         <button class="res-button-new"><span class="res-button-text">
                             Fügen Sie Ihr erstes Gericht hinzu</span></button>
                     </div>
-                </section>
+                </section> -->
+                <!-- END OF ADD NEW DISH PAGE -->
     </div>
 
     <script src="../libraries/jquery/jquery.min.js"> </script>

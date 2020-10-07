@@ -24,10 +24,16 @@ body{
 
 .res-dashboard{
     height: 100%;
+    max-width: 1128px;
+    margin: auto;
+}
+
+.res-breadcrumbs{
+    max-width: 1128px;
+    margin: auto;
 }
 .res-ul{
     display: none;
-
 }
 
 
@@ -172,6 +178,7 @@ body{
 .res-dash-block{
     display: flex;
     background-color: #f9f9f9;
+    flex-direction: column;
 }
 
 .res-dash-header{
@@ -197,12 +204,184 @@ body{
 }
 
 
-/* DASH CARD */
+/* CARD */
+
+.res-dash-card-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.res-dash-label-ordered{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.43;
+    color: #fdaf3b;
+    position: absolute;
+    top: 9px;
+    left: 55px;
+}
+
+.res-dash-card-with-label .res-dash-card-itemsNumber{
+    position: absolute;
+    top: 28px;
+}
 .res-dash-card{
     border-radius: 16px;
     box-shadow: 0 7px 20px 0 rgba(218, 218, 218, 0.45);
     background-color: #ffffff;
+    padding: 16px;
+    max-width: 304px;
+    position: relative;
+    margin: 8px;
 }
+.res-dash-card-with-label{
+    padding-top: 30px;
+}
+
+.res-dash-card-name-wrapper{
+    display: flex;
+    flex-direction: row;
+    padding-left: calc(55px - 16px);
+    padding-bottom: 6px;
+}
+
+.res-dash-card-itemsNumber{
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.38;
+    color: #000000;
+    position: absolute;
+    top: 12px;
+    left: 14px;
+}
+
+.res-dash-card-itemsNumber-active{
+    background-color: #fdaf3b;
+    width: 29px;
+    height: 29px;
+}
+
+.res-dash-card-itemsNumber-inactive{
+    width: 26px;
+    height: 26px;
+    border-radius: 8px;
+    border: solid 1px #b7b7b7;
+}
+.res-dash-card-itemName{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.25;
+    color: #212123;
+
+}
+
+.res-dash-card-itemCost{
+  font-size: 15px;
+  font-weight: bold;
+  text-align: right;
+  color: #39a7a0;
+  min-width: 87px;
+}
+.res-dash-card-deliever{
+    font-size: 14px;
+    line-height: 1.43;
+    color: #6f6f73;
+    position: relative;
+}
+
+.res-dash-card-deliever:before{
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-image: url('../assets/icons/delivery-small.svg');
+    top: 0px;
+    left: -23px;
+    color: black;
+    position: absolute;
+    fill: black;
+}
+
+.res-dash-card-date{
+    font-size: 16px;
+    line-height: 1.19;
+    color: #5e5959;
+}
+
+.res-dash-card-time-inner{
+    padding-left: 8px;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #5e5959;
+}
+
+.res-dash-card-menu-icon{
+    width: 21px;
+    height: 21px;
+    position: relative;
+    top: 0;
+    right: 12px;
+}
+
+.res-dash-card-menu{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 304px;
+    height: 193px;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    background: black;
+    opacity: 0.7;
+    border-radius: 10px;
+    z-index: 10;
+
+}
+
+.res-dash-card-menu::before {
+    content: '';
+    position: absolute;
+    right: 26px;
+    top: -26px;
+    border: 15px solid transparent;
+    border-bottom: 20px solid black;
+    opacity: 0.9;
+   }
+.res-dash-card-menu-li{
+    padding: 19px 0px 17px 48px;
+    border-bottom: 1px solid #5c5c5c;
+}
+
+.res-dash-card-menu-li:last-child{
+    border-bottom: none;
+}
+.res-dash-card-menu-link{
+    font-size: 16px;
+    color: #ffffff; 
+    position: relative;
+}
+
+.res-dash-card-menu-link:first-child:before{
+    content: '';
+    background-image: url('../assets/icons/edit.svg');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 21px;
+}
+
+.res-dash-card-menu-link:hover{
+    text-decoration: none;
+    color: #ffffff; 
+    cursor: pointer;
+}
+
+/* END OF  CARD */
 
 /* STYLES FOR ADD NEW DISH */
 
@@ -331,10 +510,6 @@ body{
         align-items: center;
     }
 
-    .res-dash-h2{
-        padding-right: 123px;
-    }
-
     .res-dash-info-group{
         padding-top: 12px;
     }
@@ -416,18 +591,22 @@ body{
 
 /* END STYLES FOR ADD NEW DISH */
 
+
+/* CARD STYLES */
+.res-dash-card-wrapper{
+    flex-direction: row;
+}
+/* END OF CARD STYLES */
 }
 
 @media screen and (min-width: 1378px){
 
     .res-ul{
-        padding-left: 129px;
         padding-bottom: 20px;
     }
 
     .res-dash-h2{
         font-size: 32px;
-        padding-right: 440px;
     }
 
     .res-dash-value{
