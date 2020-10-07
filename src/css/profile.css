@@ -1,0 +1,118 @@
+/* mobile */
+.profile{
+    width: 100%;
+    font-family: 'Roboto Regular';
+    /* background-color: white; */
+    /* background-color: #fafafa;   */
+}
+
+.profile-header-wrapper{
+    display: flex;
+    flex-direction: row;  
+    padding: 16px;
+}
+
+.profile-avatar{
+    width: 96px;
+    height: 96px;
+    border-radius: 16px;
+}
+
+.profile-name-wrapper{
+    padding-left: 24px;
+}
+
+.profile-review{
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #5e5959;
+    padding-left: 6px;
+}
+
+.profile-h2{
+    font-family: 'RobotoSlab-Medium';
+    font-weight: 500;
+    font-size: 24px;
+    color: #212123;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    padding-bottom: 2px;
+}
+
+.profile-review-wrapper{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 12px;
+}
+
+.geo{
+    display: flex;
+    align-items: center;
+
+}
+
+.geo-text{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: right;
+    color: #5e5959; 
+    padding-left: 5px;
+}
+
+.profile-description{
+    display: none;
+}
+/* tablet */
+@media (min-width: 768px) {
+    .profile{
+        background-color: #fafafa;  
+    }
+
+    .profile-h2{
+        font-size: 32px;
+        padding-bottom: 6px;
+    }
+
+    .profile-avatar{
+        width: 193px;
+        height: 215px;
+    }
+
+    .profile-review{
+        display: none;
+    }
+
+    .profile-description{
+        display: flex;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.57;
+        letter-spacing: normal;
+        color: #5e5959;
+        padding: 14px 50px 7px 0;
+        width: 501px;
+    }
+
+} 
+
+/* desktop */
+@media (min-width: 1200px) {
+    /*Desktop and desktop styles*/
+    .profile-header-wrapper{
+        padding-left: 128px;
+    }
+} 

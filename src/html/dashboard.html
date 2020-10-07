@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cook's dashboard</title>
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="../libraries/bootstrap/bootstrap-reboot.css">
+        <link rel="stylesheet" href="../libraries/bootstrap/bootstrap.css">
+        <!-- oul -->
+        <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    
+        <link rel="stylesheet" href="./../css/header.css">
+        <link rel="stylesheet" href="./../css/dashboard.css">
+</head>
+<body>
+        <!-- header -->
+        <div class="header"></div>
+        <div class="res-breadcrumbs">
+            <ul class="res-ul">
+                <li><a class="res-dash-link-active">Zuhause</a></li>
+                <li><a class="res-dash-link">Meine Profil</a></li>
+            </ul>
+        </div>
+            <div class="res-dashboard">
+                <div class="res-dash-header">
+                    <div class="res-dash-wrapper">
+                        <div class="res-dash-image">
+                            <img src="./../assets/img/avatar.jpg" alt="avatar" class="res-dash-avatar"/>
+                        </div>
+                        <div class="res-dash-info">  
+                            <h2 class="res-dash-h2">Hallo, Ralph!</h2>
+                            <div class="res-dash-info-group">
+                            <div class="res-dash-info-block">
+                                <span class="res-dash-value">1</span>
+                                <div class="res-dash-info-itemName">Order</div>
+                            </div>
+                            <div class="res-dash-info-block">
+                                <span class="res-dash-value">0,00</span>
+                                <span class="res-dash-chf">CHF</span>
+                                <div class="res-dash-info-itemName">Balance</div>
+                            </div>
+                            <div class="res-dash-info-block">
+                                <span class="res-dash-value">3</span>
+                                <div class="res-dash-info-itemName">Äußerung</div>
+                            </div>
+                            <div class="res-dash-info-block">
+                                <span class="res-dash-value">4,87</span>
+                                <div class="res-dash-info-itemName">Bewertung</div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="res-navigation">
+                    <ul class="res-menu">
+                        <li class="res-menu-item"><a class="res-menu-link" href=""><img class="res-nav-icon"  src="../assets/icons/calendar.svg"/>Zeitplan</a></li>
+                        <li class="res-menu-item"><a class="res-menu-link" href=""><img class="res-nav-icon"  src="../assets/icons/dish.svg"/>Menü</a></li>
+                        <li class="res-menu-item"><a class="res-menu-link" href=""><img class="res-nav-icon" src="../assets/icons/delivery.svg"/>Bestellen</a></li>
+                        <li class="res-menu-item"><a class="res-menu-link" href=""><img class="res-nav-icon" src="../assets/icons/card.svg"/>Ausgaben</a></li>
+                        <li class="res-menu-item"><a class="res-menu-link" href=""><img class="res-nav-icon" src="../assets/icons/user.svg"/>Profil</a></li>
+                    </ul>
+                    <button class="res-button"><span class="res-button-text">Neues Gericht</span></button>
+                </nav>
+
+                <!-- <section class="res-dash-block">
+                    <h2 class="res-dash-header">Bestellungen in Bearbeitung</h2>
+                    <div class="res-dash-card"></div>
+                </section> -->
+
+                <section class="res-dash-block-empty">
+                    <h2 class="res-dash-h2-header">Meine Terminplan</h2>
+                    <div class="res-empty-block-wrapper">
+                        <div class="res-empty-image"></div>
+                        <div class="res-empty-text">
+                            Die Mahlzeiten, die Sie kochen möchten
+                            wird hier angezeigt
+                        </div>
+                        <button class="res-button-new"><span class="res-button-text">
+                            Fügen Sie Ihr erstes Gericht hinzu</span></button>
+                    </div>
+                </section>
+    </div>
+
+    <script src="../libraries/jquery/jquery.min.js"> </script>
+    <script src="../libraries/bootstrap/bootstrap.min.js"></script>
+    <script src="../js/dashboard.js"> </script>
+</body>
+</html>
