@@ -346,6 +346,14 @@ body{
     display: none;
 }
 
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
 
 .res-dash-card-menu::before {
     content: '';
