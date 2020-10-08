@@ -359,7 +359,7 @@ body{
 }
 
 .show{
-    display: block;
+    display: flex;
 }
 
 .hide{
@@ -688,6 +688,10 @@ body{
 .hide{
     display: none;
 }
+
+.show-menu{
+    display: block;
+}
 /* END OF MENU POPUP CARD */
 
 /* SECONDARY BUTTON */
@@ -723,6 +727,10 @@ body{
 }
 .res-dash-h2-date{
     padding-left: 16px;
+}
+
+.show{
+    display: flex;
 }
 
 @media screen and (min-width: 768px){
@@ -912,6 +920,9 @@ body{
 
 }
 
+.show{
+    display: flex;
+}
 
 }
 
@@ -965,9 +976,6 @@ body{
     
     }
     
-    .show{
-        display: block;
-    }
     
     .res-dash-card-menu::before {
         content: '';
