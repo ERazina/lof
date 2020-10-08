@@ -351,9 +351,6 @@ body{
     top: 70px;
     left: 0;
     width: 304px;
-    height: 193px;
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
     background: black;
     opacity: 0.7;
     border-radius: 20px;
@@ -366,28 +363,18 @@ body{
     display: block;
 }
 
-.res-dash-card-menu{
-    display: none;
-}
-
 .hide{
     display: none;
 }
-
-.show{
-    display: block;
-}
-
-
 .res-dash-card-menu::before {
     content: '';
     position: absolute;
-    right: 26px;
+    left: 250px;
     top: -26px;
     border: 15px solid transparent;
     border-bottom: 20px solid black;
     opacity: 0.9;
-   }
+   } 
 .res-dash-card-menu-li{
     padding: 19px 0px 17px 48px;
     border-bottom: 1px solid #5c5c5c;
@@ -401,15 +388,44 @@ body{
     color: #ffffff; 
     position: relative;
 }
-
-.res-dash-card-menu-link:first-child:before{
+.res-dash-card-menu .res-dash-card-menu-li:first-child .res-dash-card-menu-link:before{
+    content: '';
+    background-image: url('../assets/icons/edit.svg');
+    position: absolute;
+    top:  0;
+    left:  -31px;
+    width: 21px;
+    height: 21px;
+    background-repeat: no-repeat;
+}
+.res-dash-card-menu .res-dash-card-menu-li:nth-child(2) .res-dash-card-menu-link:before{
+    content: '';
+    background-image: url('../assets/icons/repeat.svg');
+    position: absolute;
+    top: 0;
+    left:  -31px;
+    width: 21px;
+    height: 21px;
+    background-repeat: no-repeat;
+}
+.res-dash-card-menu .res-dash-card-menu-li:last-child .res-dash-card-menu-link:before{
+    content: '';
+    background-image: url('../assets/icons/delite.svg');
+    position: absolute;
+    top: 0;
+    left:  -31px;
+    width: 21px;
+    height: 21px;
+    background-repeat: no-repeat;
+}
+/* .res-dash-card-menu-link:first-child:before{
     content: '';
     background-image: url('../assets/icons/edit.svg');
     position: absolute;
     top: 0;
     left: 0;
     width: 21px;
-}
+} */
 
 .res-dash-card-menu-link:hover{
     text-decoration: none;
@@ -869,6 +885,8 @@ body{
 
 
 
+
+
 @media screen and (min-width: 1378px){
 
     .res-ul{
@@ -902,5 +920,34 @@ body{
     .res-dash-chf{
         font-size: 24px;
     }
+    /* DESKTOP MENU CARD */
+    .res-dash-card-menu{
+        position: absolute;
+        top: 0;
+        left: 300px;
+        width: 170px;
+        background: black;
+        opacity: 0.7;
+        border-radius: 20px;
+        z-index: 10;
+        display: none;
+    
+    }
+    
+    .show{
+        display: block;
+    }
+    
+    .res-dash-card-menu::before {
+        content: '';
+        position: absolute;
+        left: -27px;
+        top: 22px;
+        border: 15px solid transparent;
+        border-right: 20px solid black;
+        opacity: 0.9;
+       } 
+
+           /* END OF DESKTOP MENU CARD */
 
 }
