@@ -71,25 +71,6 @@
                 <section class="res-dash-block">
                     <h2 class="res-dash-h2-header">Bestellungen in Bearbeitung</h2>
                     <div class="res-dash-card-wrapper">
-                        <!-- CARD ITSELF -->
-                        <div class="res-dash-card">
-                            <div class="res-dash-card-itemsNumber res-dash-card-itemsNumber-active">x39</div>
-                            <div class="res-dash-card-name-wrapper">
-                                <div class="res-dash-card-itemName">Würziger Soba Wok mit Garnelen</div>
-                                <div class="res-dash-card-itemCost">CHF <span>9.90</span></div>
-                            </div>
-                            <div class="res-dash-card-name-wrapper">
-                                <div class="res-dash-card-date"><span>Fr, 2 Oct</span></div>
-                                <div class="res-dash-card-time">
-                                    <div class="res-dash-card-time-inner">12.00 - 15.00</div>
-                                    <div class="res-dash-card-time-inner">16.00 - 17.00</div>
-                                </div>
-                            </div>
-                            <div class="res-dash-card-name-wrapper">
-                                <div class="res-dash-card-deliever">Liefern an <span>Neederrad</span></div>
-                            </div>
-                        </div>
-                        <!-- END OF CARD ITSELF -->
 
                         <div class="res-dash-card res-dash-card-with-label">
                             <div class="res-dash-card-itemsNumber res-dash-card-itemsNumber-inactive">x39</div>
@@ -98,7 +79,7 @@
                                 <div class="res-dash-card-itemName">Würziger Soba Wok mit Garnelen</div>
                                 <img class="res-dash-card-menu-icon" href="" src="../assets/icons/menu.svg" alt="menu"}></img>
                                 <nav>
-                                    <ul class="res-dash-card-menu">
+                                    <ul class="res-dash-card-menu hide">
                                         <li class="res-dash-card-menu-li"><a class="res-dash-card-menu-link">Bearbeiten</a></li>
                                         <li class="res-dash-card-menu-li"><a class="res-dash-card-menu-link">Wiederholen</a></li>
                                         <li class="res-dash-card-menu-li"><a class="res-dash-card-menu-link">Löschen</a></li>
@@ -124,7 +105,7 @@
                                 <div class="res-dash-card-itemName">Würziger Soba Wok mit Garnelen</div>
                                 <img class="res-dash-card-menu-icon" href="" src="../assets/icons/menu.svg" alt="menu"}></img>
                                 <nav>
-                                    <ul class="res-dash-card-menu">
+                                    <ul class="res-dash-card-menu hide">
                                         <li class="res-dash-card-menu-li"><a class="res-dash-card-menu-link">Bearbeiten</a></li>
                                         <li class="res-dash-card-menu-li"><a class="res-dash-card-menu-link">Wiederholen</a></li>
                                         <li class="res-dash-card-menu-li"><a class="res-dash-card-menu-link">Löschen</a></li>
@@ -148,32 +129,48 @@
                     </div>
                 </section>
                 <!-- END OF CARD -->
-
-                <section class="res-dash-block">
-                    <h2 class="res-dash-h2-header">Mein Terminplan</h2>
-                    <div class="res-dash-h2-date">Friday, 2 October 2020</div>
-                    <!-- <button class="res-dash-secondary-button">Gericht hinzufügen</button> -->
-                    <div class="res-dash-card-wrapper">
-                    </div>
-                    </section>
-
-
-
-                <!-- ADD NEW DISH PAGE -->
-                <!-- <section class="res-dash-block-empty">
-                    <h2 class="res-dash-h2-header">Meine Terminplan</h2>
-                    <div class="res-empty-block-wrapper">
-                        <div class="res-empty-image"></div>
-                        <div class="res-empty-text">
-                            Die Mahlzeiten, die Sie kochen möchten
-                            wird hier angezeigt
+                <div class="res-dash-menu-card hide">
+                    <div class="res-dash-popup-close"></div>
+                    <div class="res-dash-menu-cardItem">
+                        <img src="../assets/img/soba.jpg" class="res-dash-menu-image">
+                        <div class="res-dash-entire-cardItem-wrapper">
+                            <div class="res-dash-cardItem-data-wrapper">
+                                <div class="res-dash-cardItem-data-name">
+                                    Würziges Soba mit Garnelen
+                                </div>
+                                <div class="res-dash-cardItem-data-price">
+                                    CHF 9.90
+                                </div>
+                            </div>
+                        <div class="res-dash-cardItem-data-description">
+                            Knusprig-zarter Spargel, helle Zitronenschale und Saft, reichhaltiges Mascarpone und salziger Pecorino Romano machen eine sensationelle Sauce für dieses Eintopf-Nudelgericht ...
                         </div>
-                        <button class="res-button-new"><span class="res-button-text">
-                            Fügen Sie Ihr erstes Gericht hinzu</span></button>
+                        <div class="res-dash-cardItem-data-wrapper">
+                            <div class="res-dash-cardItem-data-date">
+                                Mo, Aug 21, 2020
+                            </div>
+                            <div class="res-dash-cardItem-data-portions">
+                                5 porzionen
+                            </div>
+                        </div>
+                        <div class="res-dash-cardItem-data-time">
+                            12.00 - 15.00
+                        </div>
+                        <div class="res-dash-cardItem-data-time">
+                            16.00 - 17.00
+                        </div>
                     </div>
-                </section> -->
-                <!-- END OF ADD NEW DISH PAGE -->
+                    <div class="res-dash-cardItem-menu-edit">
+                        <a class="res-dash-cardItem-menu-edit-link">
+                            Bearbeiten</a>
+                        <a class="res-dash-cardItem-menu-edit-link">Wiederholen</a>
+                        <a class="res-dash-cardItem-menu-edit-link res-dash-cardItem-menu-edit-link-delete">Löschen</a>
+                    </div>
+                    </div>
+                </div>
     </div>
+
+
 
     <script src="../libraries/jquery/jquery.min.js"> </script>
     <script src="../libraries/bootstrap/bootstrap.min.js"></script>

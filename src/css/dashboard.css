@@ -60,6 +60,7 @@ body{
     letter-spacing: normal;
     color: #212123;
     padding-bottom: 9px;
+    padding-left: 8px;
 }
 
 .res-dash-info{
@@ -151,7 +152,21 @@ body{
 }
 .res-menu-link:active{
     color: #fdaf3b;
-    border-bottom: 2px solid #fdaf3b;
+    border-bottom: 3px solid #fdaf3b;
+}
+.res-menu-link:hover{
+    /* color: #fdaf3b;
+    border-bottom: 2px solid #fdaf3b; */
+}
+
+.res-menu-link:visited{
+    /* color: #fdaf3b;
+    border-bottom: 2px solid #fdaf3b; */
+}
+
+.res-menu-link.active{
+    color: #fdaf3b;
+    border-bottom: 3px solid #fdaf3b;
 }
 
 
@@ -166,9 +181,13 @@ body{
 
 .res-button{
     display: none;
-    margin-left: 28px;
+    /* margin-left: 28px; */
     margin-bottom: 6px;
-    padding: 18px 16px 30px 16px;
+    padding-top: 18px;
+    padding-bottom: 30px;
+    /* 16px 30px 16px; */
+    /* display: flex; */
+    align-items: center;
 }  
 
 /* END OF MENU */
@@ -339,7 +358,12 @@ body{
     opacity: 0.7;
     border-radius: 20px;
     z-index: 10;
+    display: none;
 
+}
+
+.show{
+    display: block;
 }
 
 .res-dash-card-menu{
@@ -468,6 +492,196 @@ body{
 }
 /* END STYLES FOR ADD NEW DISH */
 
+/* MENU POPUP CARD */
+.res-dash-menu-card{
+    background-color: #f3f3f3;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.res-dash-popup-close{
+    position: absolute;
+    right: 16px;
+    top: 18px;
+    background-image: url('../assets/icons/close.svg');
+    width: 21px;
+    height: 21px;
+}
+
+.res-dash-menu-cardItem{
+    width: 287px;
+    border-radius: 16px;
+    display: flex;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    background-color: #f3f3f3;
+}
+
+.res-dash-menu-image{
+    width: 100%;
+    height: 192px;
+    background-size: cover;
+    border-radius: 16px 16px 0 0;
+}
+.res-dash-entire-cardItem-wrapper{
+    background-color: #ffffff;
+    padding: 22px 16px;
+    border-radius: 0 0 16px 16px;
+}
+.res-dash-cardItem-data-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.res-dash-cardItem-data-name{
+    font-family: RobotoSlab;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
+    color: #212123;
+    padding-bottom: 8px;
+  
+}
+
+.res-dash-cardItem-data-price{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: right;
+    color: #2faf9a;
+    min-width: 111px;
+}
+
+.res-dash-cardItem-data-description{
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 1.42;
+    color: #5e5959;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #979797;
+}
+
+.res-dash-cardItem-data-date{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.36;
+    color: #212123;
+    padding-top: 10px;
+    padding-bottom: 4px;
+}
+
+.res-dash-cardItem-data-portions{
+    max-width: 112px;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 1.43;
+    text-align: right;
+    color: #828282;
+    padding-top: 10px;
+    position: relative;
+}
+
+.res-dash-cardItem-data-portions:before{
+    content: '';
+    background-image: url('../assets/icons/dish_black.svg');
+    width: 18px;
+    height: 15px;
+    position: absolute;
+    top: 12px;
+    left: -25px;
+}
+
+.res-dash-cardItem-data-time{
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #5e5959;
+    padding-bottom: 1px;
+}
+.res-dash-cardItem-data-time:last-child{
+    padding-bottom: 0;
+}
+
+.res-dash-cardItem-menu-edit{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.res-dash-cardItem-menu-edit-link{
+    font-family: Roboto;
+    font-size: 14px;
+    color: #368aae;
+    line-height: 90px;
+    position: relative;
+
+}
+
+.res-dash-cardItem-menu-edit-link:hover{
+    color: #368aae;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.res-dash-cardItem-menu-edit-link:last-child:hover{
+    color: #ff5353;
+    text-decoration: none;
+    cursor: pointer;
+}
+.res-dash-cardItem-menu-edit-link:first-child:before{
+    content: '';
+    background-image: url('../assets/icons/edit-blue.svg');
+    width: 19px;
+    height: 21px;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+
+}
+
+.res-dash-cardItem-menu-edit-link:nth-child(2):before{
+    content: '';
+    background-image: url('../assets/icons/repeat-blue.svg');
+    width: 19px;
+    height: 21px;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+
+}
+
+.res-dash-cardItem-menu-edit-link:last-child:before{
+    content: '';
+    background-image: url('../assets/icons/delite.svg');
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+
+}
+
+.res-dash-cardItem-menu-edit-link-delete{
+    color: #ff5353;
+}
+
+.hide{
+    display: none;
+}
+/* END OF MENU POPUP CARD */
+
 @media screen and (min-width: 768px){
     /* BREADCRUMPS */
 
@@ -520,6 +734,9 @@ body{
 
     .res-dash-wrapper{
         align-items: center;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
     }
 
     .res-dash-info-group{
@@ -549,6 +766,8 @@ body{
         border-radius: 12px;
         background-image: linear-gradient(to bottom, #5ebeae, #3589ae);
         border: none;
+        display:flex;
+        
 
      
 
@@ -573,7 +792,7 @@ body{
     .res-menu-item{
         font-family: Roboto;
         text-align: center;
-        width: calc(100% /5);
+        width: calc(100% /6);
     }
     /* END OF MENU */
 
@@ -607,9 +826,48 @@ body{
 /* CARD STYLES */
 .res-dash-card-wrapper{
     flex-direction: row;
+    flex-wrap: wrap;
 }
 /* END OF CARD STYLES */
+
+
+.res-dash-h2-date{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.4px;
+    color: #808080;
+    text-transform: uppercase;
+    padding-left: 8px;
+    padding-bottom: 5px;
 }
+
+/* SECONDARY BUTTON */
+
+.res-dash-secondary-button{
+    width: 110px;
+    height: 42px;
+    border-radius: 12px;
+    border-width: 1.5px;
+    border-image-source: linear-gradient(to bottom, #5ebeae, #3589ae);
+    border-image-slice: 1;
+    position: absolute;
+}
+
+/* MENU CARD POPUP */
+.res-dash-menu-card{
+    background-color: rgba(24, 48, 44, 0.8);
+
+}
+
+/* END OF MENU CARD */
+
+/* END OF SECONDARY BUTTON */
+
+
 
 @media screen and (min-width: 1378px){
 
