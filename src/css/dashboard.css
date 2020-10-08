@@ -135,7 +135,6 @@ body{
     width: calc(100% /5);
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .res-menu-link{
@@ -178,10 +177,6 @@ body{
 .res-dash-image{
     display: flex;
     flex-direction: row;
-}
-
-.res-nav-icon{
-    /* display */
 }
 
 .res-button{
@@ -422,14 +417,7 @@ body{
     height: 21px;
     background-repeat: no-repeat;
 }
-/* .res-dash-card-menu-link:first-child:before{
-    content: '';
-    background-image: url('../assets/icons/edit.svg');
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 21px;
-} */
+
 
 .res-dash-card-menu-link:hover{
     text-decoration: none;
@@ -702,6 +690,41 @@ body{
 }
 /* END OF MENU POPUP CARD */
 
+/* SECONDARY BUTTON */
+.res-dash-secondary-button{
+    width: 112px;
+    height: 40px;
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 1.5px;
+    /* border-image-source: linear-gradient(to bottom, #5ebeae, #3589ae);
+    border-image-slice: 1; */
+    border: 2px solid #5ebeae;
+
+    background-color: #ffffff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.33;
+    text-align: center;
+    color: #39a7a0;
+}
+/* END OF SECONDARY BUTTON */
+
+.res-dash-block-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 36px;
+    align-items: center;
+
+}
+.res-dash-h2-date{
+    padding-left: 16px;
+}
+
 @media screen and (min-width: 768px){
     /* BREADCRUMPS */
 
@@ -797,13 +820,9 @@ body{
         background-image: linear-gradient(to bottom, #5ebeae, #3589ae);
         border: none;
         display:flex;
-        
-
-     
-
-        margin-right: 28px;
         justify-content: center;
         align-items: center;
+        padding: 0;
 
     }
 
@@ -822,7 +841,7 @@ body{
     .res-menu-item{
         font-family: Roboto;
         text-align: center;
-        width: calc(100% /6);
+        width: calc(100% /5);
     }
     /* END OF MENU */
 
@@ -877,15 +896,7 @@ body{
 
 /* SECONDARY BUTTON */
 
-.res-dash-secondary-button{
-    width: 110px;
-    height: 42px;
-    border-radius: 12px;
-    border-width: 1.5px;
-    border-image-source: linear-gradient(to bottom, #5ebeae, #3589ae);
-    border-image-slice: 1;
-    position: absolute;
-}
+
 
 /* MENU CARD POPUP */
 .res-dash-menu-card{
@@ -896,10 +907,13 @@ body{
 /* END OF MENU CARD */
 
 /* END OF SECONDARY BUTTON */
+.res-dash-block-wrapper{
+    padding-left: 0;
+
+}
 
 
-
-
+}
 
 @media screen and (min-width: 1378px){
     .res-dash-wrapper{
