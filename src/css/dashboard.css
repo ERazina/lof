@@ -122,18 +122,21 @@ body{
     display: flex;
     flex-direction: row;
     width: 100%;
+    justify-content: center;
 }
 .res-navigation{
     border-bottom: solid 2px #e8e8e8;
     display: flex;
     margin: 16px;
     margin-top: 0;
+    display: flex;
+    align-items: center;
 }
 
 .res-menu-item{
     text-align: center;
     width: calc(100% /5);
-    display: flex;
+    /* display: flex; */
     align-items: center;
 }
 
@@ -851,6 +854,15 @@ body{
         text-align: center;
         width: calc(100% /5);
     }
+
+    .res-menu{
+        max-width: 500px;
+    }
+
+    .res-navigation{
+        display: flex;
+        justify-content: space-between;
+    }
     /* END OF MENU */
 
 
@@ -961,6 +973,10 @@ body{
     }
     .res-dash-chf{
         font-size: 24px;
+    }
+
+    .res-menu{
+        max-width: 900px;
     }
     /* DESKTOP MENU CARD */
     .res-dash-card-menu{
