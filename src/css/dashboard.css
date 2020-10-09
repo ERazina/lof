@@ -981,6 +981,8 @@ body{
         max-width: 900px;
     }
     /* DESKTOP MENU CARD */
+
+
     .res-dash-card-menu{
         position: absolute;
         top: 0;
@@ -993,6 +995,7 @@ body{
         display: none;
     
     }
+
     
     
     .res-dash-card-menu::before {
@@ -1004,6 +1007,10 @@ body{
         border-right: 20px solid black;
         opacity: 0.9;
        } 
+
+       .show-menu{
+        display: block;
+    }
 
            /* END OF DESKTOP MENU CARD */
 

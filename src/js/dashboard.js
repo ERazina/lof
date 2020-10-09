@@ -30,7 +30,7 @@ $(function(){
       });
 
       //close popup tap
-      $(".res-dash-popup-close").on("tap",function(){
-        $('.res-dash-menu-card').toggleClass('show');
-      });
+      // $(".res-dash-popup-close").on("tap",function(){
+      //   $('.res-dash-menu-card').toggleClass('show');
+      // });
 });
