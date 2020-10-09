@@ -18,7 +18,7 @@ html, body{
 }
 
 body{
-    font-family: 'Roboto';
+    font-family: Roboto;
     background-color: #fafafa;
 }
 
@@ -39,9 +39,11 @@ body{
 
 .res-dash-wrapper{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 16px;
     padding-bottom: 0;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -52,6 +54,11 @@ body{
 }
 
 .res-dash-first-name{
+    padding-left: 16px;
+    display: flex;
+}
+
+.res-dash-second-name{
     display: none;
 }
 
@@ -64,12 +71,6 @@ body{
     line-height: normal;
     letter-spacing: normal;
     color: #212123;
-    padding-bottom: 9px;
-}
-
-.res-dash-info{
-    padding-left: 8px;
-
 }
 
 .res-dash-info-group{
@@ -99,21 +100,15 @@ body{
     color: #626264;
 }
 .res-dash-value{
+    font-family: Roboto;
     font-size: 18px;
     font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
     color: #5e5959;
 }
 .res-dash-chf{
+    font-family: Roboto;
     font-size: 12px;
     font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
     color: #626264;
 }
 
@@ -180,6 +175,8 @@ body{
 .res-dash-image{
     display: flex;
     flex-direction: row;
+    padding-left: calc(93px - 16px);
+    padding-bottom: 24px;
 }
 
 .res-button{
@@ -204,7 +201,6 @@ body{
 }
 
 .res-dash-header{
-    font-family: RobotoSlab;
     font-size: 18px;
     font-weight: 500;
     font-stretch: normal;
@@ -212,7 +208,7 @@ body{
     line-height: normal;
     letter-spacing: normal;
     color: #5e5959;
-    padding-bottom: 13px;
+    padding-bottom: 23px;
 }
 
 .res-dash-h2-header{
@@ -788,8 +784,13 @@ body{
         display: block;
         padding-left: 21px;
     }
-    .res-dash-second-name{
+
+    .res-dash-first-name{
         display: none;
+    }
+    .res-dash-second-name{
+        display: flex;
+        padding-left: 21px;
     }
 
     .res-dash-avatar{
@@ -802,10 +803,19 @@ body{
         display: flex;
         justify-content: space-between;
         width: 100%;
+        flex-direction: row;
+        padding-top: 30px;
+    }
+    .res-dash-info-group{
+        width: 350px;
+        min-width: 360px;
+        max-width: 412px;
+        display: flex;
+        justify-content: space-between;
     }
 
-    .res-dash-info-group{
-        padding-top: 12px;
+    .res-dash-image{
+        padding-left: 0;
     }
     .res-dash-value{
         font-size: 20px;
@@ -816,7 +826,24 @@ body{
     }
 
     .res-dash-info-block{
-        padding-right: 42px;
+        padding-right: 0;
+    }
+    .res-dash-info-block:nth-child(2){
+        padding-right: 0;
+    }
+
+    /* .res-dash-info-block:last-child{
+        padding-right: 55px;
+    } */
+
+    .res-dash-chf{
+        font-size: 20px;
+        color: #5e5959;
+    }
+
+
+    .res-dash-header{
+        padding-bottom: 0;
     }
 
     /* MENU */
@@ -940,6 +967,20 @@ body{
 }
 
 @media screen and (min-width: 1378px){
+
+    .res-dash-info-group{
+        width: 403px;
+
+    }
+
+    .res-dash-value{
+        font-size: 24px;
+    }
+
+    .res-dash-value-wrap{
+        display: flex;
+        flex-wrap: nowrap;
+    }
     .res-dash-wrapper{
         padding-left: 0;
         padding-right: 0;
@@ -960,9 +1001,9 @@ body{
         font-size: 14px;
     }
 
-    .res-dash-info-block{
+    /* .res-dash-info-block{
         padding-right: 50px;
-    }
+    } */
 
     .res-dash-wrapper{
         max-width: 1100px;
