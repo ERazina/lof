@@ -140,6 +140,10 @@ body{
     align-items: center;
 }
 
+.res-menu-item:nth-child(4){
+    padding-left: 10px;
+}
+
 .res-menu-link{
     font-family: Roboto;
     font-size: 13px;
