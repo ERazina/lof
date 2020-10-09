@@ -749,14 +749,15 @@ body{
     font-size: 14px;
     color: #398eae;
     text-decoration: none;
-
+    margin-left: 5px;
 }
 
-.res-dash-link:active{
-    font-size: 14px;
+.res-dash-link:active, .res-dash-link:disabled{
     color: #828282;
-    text-decoration: none;
-    padding-left: 5px;
+}
+
+.res-dash-link:visited{
+    color: #398eae;
 }
 
 .res-ul li:not(:first-child):before{
