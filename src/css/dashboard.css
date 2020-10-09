@@ -699,22 +699,17 @@ body{
 
 /* SECONDARY BUTTON */
 .res-dash-secondary-button{
-    width: 112px;
     height: 40px;
     border-radius: 12px;
-    border-style: solid;
-    border-width: 1.5px;
-    /* border-image-source: linear-gradient(to bottom, #5ebeae, #3589ae);
-    border-image-slice: 1; */
-    border: 2px solid #5ebeae;
+    border: solid 1.5px #5ebeae;
 
-    background-color: #ffffff;
     font-family: Roboto;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 1.33;
     text-align: center;
     color: #39a7a0;
+    background-color: transparent;
 }
 /* END OF SECONDARY BUTTON */
 
@@ -739,6 +734,9 @@ body{
 @media screen and (min-width: 768px){
     /* BREADCRUMPS */
 
+.add-new-dish-button{
+    display: none;
+}
 .res-ul{
     display: flex;
     flex-direction: row;
