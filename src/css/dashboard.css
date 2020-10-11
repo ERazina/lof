@@ -174,7 +174,7 @@ body{
 }
 .res-menu-link:hover{
     text-decoration: none;
-    color: #296484;
+    color: #266385;
 }
 
 .res-menu-link:hover > svg path{
@@ -762,12 +762,17 @@ body{
     margin-left: 5px;
 }
 
+.res-dash-link:hover{
+    color: #226286;
+    text-decoration: none;
+}
+
 .res-dash-link:active, .res-dash-link:disabled{
     color: #828282;
 }
 
 .res-dash-link:visited{
-    color: #398eae;
+    color: #226286;
 }
 
 .res-ul li:not(:first-child):before{
@@ -1032,7 +1037,7 @@ body{
     }
 
     .res-menu{
-        max-width: 900px;
+        max-width: 700px;
     }
     /* DESKTOP MENU CARD */
 
