@@ -3,7 +3,7 @@
         <g stroke="#368AAE" stroke-width="1.5">
             <g>
                 <g transform="translate(-212 -172) translate(0 172) translate(212.333)">
-                    <rect width="19" height="13.818" x="1" y="4" rx="2"/>
+                    <rect stroke="#368AAE" width="19" height="13.818" x="1" y="4" rx="2"/>
                     <path d="M1 9.182L20 9.182"/>
                 </g>
             </g>
