@@ -1,0 +1,193 @@
+.res-dash-entyre-wrapper{
+    padding: 23px 16px 0 16px;
+}
+
+.res-dash-flex-row-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.res-dash-h2-padding-bottom{
+    padding-bottom: 28px;
+}
+
+.res-dash-input{
+    width: 100%;
+    max-width: 543px;
+    height: 49px;
+    border-radius: 2px;
+    border: solid 1px #dbdbdb;
+    background-color: #ffffff;
+    padding-left: 15px;
+
+    font-family: Roboto;
+    font-size: 16px;
+    color: #212123;
+    margin-bottom: 17px;
+    outline-color: #fdaf3b;
+}
+
+.res-dash-input:focus{
+    border: solid 2px #fdaf3b;
+}
+
+.res-dash-input:invalid{
+    border: solid 1px #ef423e;
+}
+
+.res-dash-label{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    color: #212123;
+    padding-bottom: 5px;
+}
+
+#res-dash-price{
+    position: relative;
+}
+#res-dash-price:before{
+    content: 'CHF';
+    display: block;
+    position: absolute;
+    /* width: 31px;
+    height: 19px; */
+    font-family: Roboto;
+    font-size: 16px;
+    color: #a5a5a5;
+    top: 37px;
+    right: 15px;
+}
+
+#res-label-price-input{
+    padding-right: 45px;
+}
+
+.res-dash-form-container{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#input__file{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+
+}
+
+.res-dash-input__file-button{
+    display: flex;
+    flex-direction: column;
+    width: 88px;
+    height: 88px;
+    border-radius: 12px;
+    border: 1.5px solid #39a7a0;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.43;
+    text-align: center;
+    color: #39a7a0;
+
+    margin-bottom: 19px;
+}
+
+.res-dash-input-wrapper{
+    display: flex;
+    flex-direction: column;
+
+}
+.res-dash-select{
+    width: 192px;
+    height: 49px;
+    border-radius: 2px;
+    border: solid 1px #dbdbdb;
+    background-color: #ffffff;
+}
+.res-dash-select-value{
+    width: 192px;
+    height: 49px;
+    border-radius: 2px;
+    border: solid 1px #dbdbdb;
+    background-color: #ffffff;
+}
+
+.res-dash-inline-button{
+    min-width: 119.5px;
+    height: 40px;
+    font-family: Roboto;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #39a7a0;
+    border: none;
+    background: transparent;
+}
+
+.res-dash-inline-button:hover{
+    background-color: #ebf3f7;
+}
+
+.res-dash-inline-button:focus{
+    color: #fdaf3b;
+    background-color: transparent;
+    outline: transparent;
+}
+
+.res-dash-inline-button:active{
+    background-color: #32a7a1;
+    color: white;
+}
+
+.res-dash-inline-button:disabled{
+    color: #f9f9f9;
+}
+
+.res-dash-delete{
+    min-width: 114px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ef423e;
+}
+
+.res-dash-button-wrapper{
+    width: 100%;
+    height: 82px;
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0 7px 20px 0 rgba(218, 218, 218, 0.45);
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.res-dash-select{
+    width: 503px !important;
+    height: 128px !important;
+    border-radius: 2px !important;
+    border: 1px solid #dbdbdb !important;
+    background-color: #ffffff !important;
+}
+
+.select{
+    width: 503px;
+    height: 128px;
+    border-radius: 2px;
+    border: solid 1px #dbdbdb;
+    background-color: #ffffff;
+}
+
+
+
+@media screen and (min-width: 768px){
+    .res-dash-form-container{
+        padding-left: 16px;
+        padding-right: 16px;
+        max-width: 543px;
+        margin: auto;
+    }
+}

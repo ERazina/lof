@@ -33,4 +33,13 @@ $(function(){
       $(".res-dash-popup-close").on("tap",function(){
         $('.res-dash-menu-card').toggleClass('show');
       });
+
+        // $('.res-dash-select2').select2();
+
+        $( "#calendar" ).datepicker({
+          dayNamesMin: [ "Mo", "Di", "Mi", "Do", "Fr", "Sa", "So" ],
+          functionfirstDay: 1,
+          hideIfNoPrevNext: true,
+          monthNames: ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember']
+        });
 });

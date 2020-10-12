@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new dish page</title>
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="../libraries/bootstrap/bootstrap-reboot.css">
+        <link rel="stylesheet" href="../libraries/bootstrap/bootstrap.css">
+        <!-- oul -->
+        <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+        <link rel="stylesheet" href="../libraries/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+    
+        <link rel="stylesheet" href="./../css/header.css">
+        <link rel="stylesheet" href="./../css/dashboard.css">
+        <link rel="stylesheet" href="./../css/addNewDish.css">
+</head>
+<body>
+        <!-- header -->
+        <div class="header"></div>
+        <div class="res-breadcrumbs">
+            <div class="res-dash-entyre-wrapper">
+                <div class="res-dash-flex-row-wrapper res-dash-h2-padding-bottom">
+                    <a onClick={window.hystory.goBack()}>
+                        <img class="res-dash-link-mobile" href={window.hystory.goBack()} src="../assets/icons/left.svg"/>
+                    </a>
+                    <h2 class="res-dash-h2-header">Mein Terminplan</h2>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="res-dash-form-container">
+            <form>
+                <label class="res-dash-label" for="">Name der Mahlzeit*</label>
+                <input type="text" class="res-dash-input" required>
+
+                <div id="res-dash-price">
+                    <label class="res-dash-label" for="preis">Preis für Portion*</label>
+                    <input name="preis" type="number" class="res-dash-input" id="res-label-price-input" required>
+                </div>
+
+
+
+
+                <!--  Form for image upload -->
+                <label class="res-dash-label" for="input__file">Bild*</label>
+                <div class="res-dash-file-wrapper">
+                    <input name="file" type="file" name="file" id="input__file" class="res-dash-file" accept="image/*,image/jpeg" multiple>
+                    <label for="input__file" class="res-dash-input__file-button">
+                       <span class="input__file-icon-wrapper"><img class="input__file-icon" src="../assets/icons/camera.svg" alt="Bild hochladen" width="25"></span>
+                       <span class="input__file-button-text">Wählen</span>
+                    </label>
+                 </div>
+                <!--  end of form for image upload -->
+
+                <!-- dropdown -->
+                <div class="res-dash-input-wrapper">
+                    <label class="res-dash-label" for="input__file">Anzahl Portionen *</label>
+                    <select name="select" class="res-dash-select"> <!--Supplement an id here instead of using 'name'-->
+                        <option class="res-dash-select-value" value="value1">1</option> 
+                        <option class="res-dash-select-value" value="value2">2</option>
+                        <option class="res-dash-select-value" value="value3">3</option>
+                        <option class="res-dash-select-value" value="value1">4</option> 
+                        <option class="res-dash-select-value" value="value2">5</option>
+                        <option class="res-dash-select-value" value="value3">6</option>
+                    </select>
+                </div>
+                <!-- end of dropdown -->
+                <!-- Kohdatum -->
+                <!-- end of Kohdatum -->
+
+
+                <!-- Delivery -->
+                <label class="res-dash-label" for="input__file">Lieferzeit *</label>
+                <!-- <select multiple>
+                    <option class="res-dash-select-value" value="value1">1</option> 
+                    <option class="res-dash-select-value" value="value2">2</option>
+                    <option class="res-dash-select-value" value="value3">3</option>
+                    <option class="res-dash-select-value" value="value1">4</option> 
+                    <option class="res-dash-select-value" value="value2">5</option>
+                    <option class="res-dash-select-value" value="value3">6</option>
+                </select> -->
+
+                <!-- button -->
+                <div class="res-dash-flex-row-wrapper">
+                    <button class="res-dash-inline-button">Alle auswählen</button>
+                    <button class="res-dash-inline-button res-dash-delete">Keine auswählen</button>
+                </div>
+            </form>
+
+
+        </div>
+
+        <!-- button -->
+        <div class="res-dash-button-wrapper">
+            <button class="res-button">
+                <span class="res-button-text">Weiter: Zeitplaneinstellung</span>
+            </button>
+        </div>
+        <!-- end of button -->
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="../libraries/jquery/jquery.min.js"> </script>
+    <script src="../libraries/bootstrap/bootstrap.min.js"></script>
+	<script src="../libraries/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../js/dashboard.js"> </script>
+</body>
+</html>

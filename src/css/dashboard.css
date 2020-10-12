@@ -194,15 +194,33 @@ body{
 }
 
 .res-button{
-    display: none;
-    /* margin-left: 28px; */
+    /* display: none; */
+    
     margin-bottom: 6px;
-    padding-top: 18px;
-    padding-bottom: 30px;
-    /* 16px 30px 16px; */
-    /* display: flex; */
     align-items: center;
-}  
+    outline-color: transparent;
+
+    width: 271px;
+    height: 48px;
+    border-radius: 12px;
+    background: linear-gradient( #5ebeae, #3589ae);
+    border: none;
+    color: #ffffff;
+    outline: transparent;
+} 
+
+.res-button:hover{
+    background: linear-gradient(#53b4a4, #2e7a9b);
+}
+
+.res-button:disabled{
+    background: #dedddd;
+}
+
+.res-button:active{
+    outline-color: transparent;
+    background: #fdaf3b;
+}
 
 /* END OF MENU */
 
@@ -486,7 +504,7 @@ body{
     width: 185px;
   height: 40px;
   border-radius: 12px;
-  background-image: linear-gradient(to bottom, #5ebeae, #3589ae);
+  /* background-image: linear-gradient(to bottom, #5ebeae, #3589ae); */
   justify-content: center;
   align-items: center;
   border: none;
@@ -875,7 +893,7 @@ body{
         width: 140px;
         height: 40px;
         border-radius: 12px;
-        background-image: linear-gradient(to bottom, #5ebeae, #3589ae);
+        background: linear-gradient(#5ebeae, #3589ae);
         border: none;
         display:flex;
         justify-content: center;
@@ -894,6 +912,8 @@ body{
         text-align: center;
         color: #ffffff;
         font-family: Roboto;
+        display: flex;
+
     }
 
     .res-menu-item{

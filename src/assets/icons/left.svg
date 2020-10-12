@@ -2,7 +2,7 @@
     <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
         <g stroke="#368AAE" stroke-width="1.5">
             <g>
-                <path d="M5 7L11 13 17 7" transform="translate(-19 -90) translate(19 90) rotate(90 11 10)"/>
+                <path d="M5 7L11 13 17 7" transform="translate(-515 -1336) translate(515 1336) rotate(90 11 10)"/>
             </g>
         </g>
     </g>

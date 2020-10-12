@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new dish page</title>
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="../libraries/bootstrap/bootstrap-reboot.css">
+        <link rel="stylesheet" href="../libraries/bootstrap/bootstrap.css">
+        <!-- oul -->
+        <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+        <link rel="stylesheet" href="../libraries/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+
+
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+    
+        <link rel="stylesheet" href="./../css/header.css">
+        <link rel="stylesheet" href="./../css/dashboard.css">
+        <link rel="stylesheet" href="./../css/addNewDish.css">
+        <link rel="stylesheet" href="./../css/calendar.css">
+</head>
+<body>
+        <!-- header -->
+        <div class="header"></div>
+        <div class="res-breadcrumbs">
+            <div class="res-dash-entyre-wrapper">
+                <div class="res-dash-flex-row-wrapper res-dash-h2-padding-bottom">
+                    <a onClick={window.hystory.goBack()}>
+                        <img class="res-dash-link-mobile" href={window.hystory.goBack()} src="../assets/icons/left.svg"/>
+                    </a>
+                    <h2 class="res-dash-h2-header">Mein Terminplan</h2>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="res-dash-form-container">
+            <!-- <form> -->
+                <p>
+                    <label class="res-dash-label" for="preis">
+                        Bestellschluss *</label>
+                    <input type="text" id="calendar"></p>
+            <!-- </form> -->
+
+
+    </div>
+
+    <script src="../libraries/jquery/jquery.min.js"> </script>
+    <script src="../libraries/bootstrap/bootstrap.min.js"></script>
+    <script src="../libraries/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/dashboard.js"> </script>
+</body>
+</html>
