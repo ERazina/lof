@@ -18,7 +18,7 @@
 
         <link rel="stylesheet" href="../css/jquerypieloader.css"></script>
 
-        <link rel="stylesheet" href="../css/datetimepicker.min.css"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.js"></script>
     
         <link rel="stylesheet" href="./../css/header.css">
         <link rel="stylesheet" href="./../css/dashboard.css">
@@ -106,15 +106,15 @@
                 <!-- end of dropdown -->
                 <!-- Kohdatum on 320px -->
 
-                <div class="res-dash-row-input-wrapper res-dash-kohdatum res-dash-mobile-show">
+                <!-- <div class="res-dash-row-input-wrapper res-dash-kohdatum res-dash-mobile-show">
                     <label class="res-dash-label" for="">Kohdatum *</label>
                     <input type="date" class="res-dash-input" value={new Date()}>
-                </div>
+                </div> -->
                 <!-- end of Kohdatum -->
 
                 <!-- Kohdatum calendar on tablet and desktop-->
                 <!-- <form> -->
-                <div class="res-dash-mobile-hide">
+                <div>
                     <label class="res-dash-label" for="preis">
                         Kohdatum *</label>
                     <div id="calendar" class="res-dash-display-desktop"></div>
@@ -142,9 +142,13 @@
 
                 <!-- Bestellschluss -->
 
+                <!-- html = '<div class="ui-timepicker-div' + (o.isRTL ? ' ui-timepicker-rtl' : '') + (o.oneLine && o.controlType === 'select' ? ' ui-timepicker-oneLine' : '') + '"><dl>' + '<dt class="ui_tpicker_time_label' + ((o.showTime) ? '' : noDisplay) + '">' + o.timeText + '</dt>' +
+                    '<dd class="ui_tpicker_time '+ ((o.showTime) ? '' : noDisplay) + '"><input class="ui_tpicker_time_input" ' + (o.timeInput ? '' : 'disabled') + '/></dd>'; -->
+
                 <div class="res-dash-row-input-wrapper res-dash-kohdatum res-dash-mobile-show">
                     <label class="res-dash-label" for="">Bestellschluss *</label>
-                    <input type="date" class="res-dash-input" value={new Date()}>
+                    <div id="calendar" class="res-dash-display-desktop"></div>
+                    <div class="ui-timepicker-div ui-timepicker-oneLine" ><input class="ui_tpicker_time_input" ></div>
                 </div>
 
                 <label class="res-dash-label" for="input__file">Lieferzeit *</label>
@@ -197,7 +201,9 @@
 
     <script type="text/javascript" src="../js/jquerypie.min.js"></script>
 
-    <script src="../js/datetimepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
     <script src="../js/dashboard.js"> </script>
 </body>
