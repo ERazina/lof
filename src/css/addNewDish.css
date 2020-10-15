@@ -294,8 +294,12 @@
     color: #212123;
 }
 
-.res-dash-show-hide-class{
+.res-dash-mobile-show{
     display: flex;
+}
+
+.res-dash-mobile-hide{
+    display: none;
 }
 
 
@@ -308,7 +312,7 @@
         margin: auto;
     }
 
-    .res-dash-show-hide-class{
+    .res-dash-mobile-show{
         display: none;
     }
 
@@ -337,6 +341,10 @@
         padding-right: 16px;
         max-width: 543px;
         margin: auto;
+    }
+
+    .res-dash-mobile-hide{
+        display: block;
     }
 }
 

@@ -35,7 +35,7 @@
                     <li><a class="res-dash-link">Übersicht</a></li>
                     <li><a class="res-dash-link .active">Create new dish</a></li>
                 </ul>
-                <h2 class="res-dash-h2-header res-dash-remove-padding res-dash-show-hide-class">Create new dish</h2>
+                <h2 class="res-dash-h2-header res-dash-remove-padding res-dash-mobile-show">Create new dish</h2>
             </div>
 
         <div class="res-dash-desktop-card-layout">
@@ -104,17 +104,19 @@
                 <!-- end of dropdown -->
                 <!-- Kohdatum on 320px -->
 
-                <div class="res-dash-row-input-wrapper res-dash-kohdatum">
+                <div class="res-dash-row-input-wrapper res-dash-kohdatum res-dash-mobile-show">
                     <label class="res-dash-label" for="">Kohdatum *</label>
                     <input type="date" class="res-dash-input" value={new Date()}>
                 </div>
                 <!-- end of Kohdatum -->
 
-                <!-- Kohdatum calendar -->
+                <!-- Kohdatum calendar on tablet and desktop-->
                 <!-- <form> -->
-                <label class="res-dash-label" for="preis">
-                    Kohdatum *</label>
-                <div id="calendar" class="res-dash-display-desktop"></div>
+                <div class="res-dash-mobile-hide">
+                    <label class="res-dash-label" for="preis">
+                        Kohdatum *</label>
+                    <div id="calendar" class="res-dash-display-desktop"></div>
+                </div>
                 <!-- </form> -->
                 <!-- end of Kohdatum calendar -->
 
