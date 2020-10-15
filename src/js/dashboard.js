@@ -117,7 +117,10 @@ $(function(){
        showTimePicker: true,
        controlType: myControl,
        minDateTime: new Date(),
-       lang: 'de'
+       lang: 'de',
+       timeText: "Stunde",
+       hourText: 'Uhr', 
+       minuteText: "Minute"
       });
 
 

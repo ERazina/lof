@@ -241,6 +241,7 @@
     border: 0;
     height: 128px;
     border-radius: 2px;
+    border-bottom: 1px solid #dbdbdb;
 }
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice{
@@ -344,6 +345,7 @@
         padding-left: 16px;
         padding-right: 16px;
         width: 100%;
+        margin-top: 8px;
     }
 
     .res-dash-inner-button-container{

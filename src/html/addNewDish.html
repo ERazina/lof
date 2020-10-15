@@ -150,16 +150,22 @@
 
                 <!-- Bestellschluss -->
 
-                <div id="datetimepicker" class="ui-timepicker-input"></div>
+
                     
 
                 <div class="res-dash-row-input-wrapper res-dash-kohdatum res-dash-mobile-show">
                     <label class="res-dash-label" for="">Bestellschluss *</label>
-                    <div id="calendar" class="res-dash-display-desktop"></div>
-                    <div class="ui-timepicker-div ui-timepicker-oneLine" ><input class="ui_tpicker_time_input" ></div>
+                    <!-- <div id="calendar" class="res-dash-display-desktop"></div> -->
+                    <div id="datetimepicker" class="ui-timepicker-input"></div>
                 </div>
 
-                <label class="res-dash-label" for="input__file">Lieferzeit *</label>
+                <div class="res-dash-wrapper-container-top-input">
+                    <label class="res-dash-label" for="input__file">Lieferzeit *</label>
+                    <div class="res-dash-flex-row-wrapper res-dash-mobile-hide">
+                        <button class="res-dash-inline-button">Alle auswählen</button>
+                        <button class="res-dash-inline-button res-dash-delete">Keine auswählen</button>
+                    </div>
+                </div>
 
                 <select class="js-example-basic-multiple" name="states[]" multiple="multiple">
                     <option value="AL">Alpnach</option>
@@ -169,7 +175,7 @@
                 <!-- end of Bestellschluss -->
 
                 <!-- button -->
-                <div class="res-dash-flex-row-wrapper">
+                <div class="res-dash-flex-row-wrapper res-dash-mobile-show">
                     <button class="res-dash-inline-button">Alle auswählen</button>
                     <button class="res-dash-inline-button res-dash-delete">Keine auswählen</button>
                 </div>
