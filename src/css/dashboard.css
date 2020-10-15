@@ -29,8 +29,12 @@ body{
 }
 
 .res-breadcrumbs{
+    display: flex;
     max-width: 1128px;
     margin: auto;
+    padding-top: 23px;
+    padding-bottom: 28px;
+    padding-left: 16px;
 }
 .res-ul{
     display: none;
@@ -759,6 +763,15 @@ body{
     display: flex;
 }
 
+.h2-card-class{
+    font-family: RobotoSlab;
+    font-size: 18px;
+    font-weight: 500;
+    color: #212123;
+    display: none;
+    padding-bottom: 35px;
+}
+
 @media screen and (min-width: 768px){
     /* BREADCRUMPS */
 
@@ -768,7 +781,7 @@ body{
 .res-ul{
     display: flex;
     flex-direction: row;
-    padding-top: 19px;
+    padding-top: 29px;
     padding-left: 16px;
 
 }
@@ -1010,6 +1023,14 @@ body{
 .show{
     display: flex;
 }
+
+.h2-card-class{
+    display: block;
+    font-size: 28px;
+    font-weight: 500;
+    color: #212123;
+}
+
 
 }
 

@@ -12,54 +12,87 @@
         <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 
         <link rel="stylesheet" href="../libraries/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+        <link rel="stylesheet" href="../css/jquerypieloader.css"></script>
     
         <link rel="stylesheet" href="./../css/header.css">
         <link rel="stylesheet" href="./../css/dashboard.css">
         <link rel="stylesheet" href="./../css/addNewDish.css">
+        <link rel="stylesheet" href="./../css/calendar.css">
 </head>
 <body>
         <!-- header -->
         <div class="header"></div>
-        <div class="res-breadcrumbs">
-            <div class="res-dash-entyre-wrapper">
-                <div class="res-dash-flex-row-wrapper res-dash-h2-padding-bottom">
-                    <a onClick={window.hystory.goBack()}>
-                        <img class="res-dash-link-mobile" href={window.hystory.goBack()} src="../assets/icons/left.svg"/>
-                    </a>
-                    <h2 class="res-dash-h2-header">Mein Terminplan</h2>
-                </div>
 
+            <!-- if destktop -->
+            <div class="res-breadcrumbs">
+                <a onClick={window.hystory.goBack()}>
+                    <img class="res-dash-link-mobile" href={window.hystory.goBack()} src="../assets/icons/left.svg"/></a>
+                <ul class="res-ul">
+                    <li><a class="res-dash-link">Übersicht</a></li>
+                    <li><a class="res-dash-link .active">Create new dish</a></li>
+                </ul>
+                <h2 class="res-dash-h2-header res-dash-remove-padding res-dash-show-hide-class">Create new dish</h2>
             </div>
 
-        </div>
+        <div class="res-dash-desktop-card-layout">
         <div class="res-dash-form-container">
+            <h2 class="h2-card-class">Create new dish</h2>
             <form>
-                <label class="res-dash-label" for="">Name der Mahlzeit*</label>
-                <input type="text" class="res-dash-input" required>
-
-                <div id="res-dash-price">
+                <div class="res-dash-row-input-wrapper">
+                    <label class="res-dash-label" for="">Name der Mahlzeit*</label>
+                    <input type="text" class="res-dash-input" >
+                </div>
+                <div id="res-dash-price"  class="res-dash-row-input-wrapper">
                     <label class="res-dash-label" for="preis">Preis für Portion*</label>
-                    <input name="preis" type="number" class="res-dash-input" id="res-label-price-input" required>
+                    <input name="preis" type="number" class="res-dash-input" id="res-label-price-input">
                 </div>
 
 
 
-
+                
                 <!--  Form for image upload -->
                 <label class="res-dash-label" for="input__file">Bild*</label>
-                <div class="res-dash-file-wrapper">
+                <!-- input for picture to upload -->
+                <div class="res-dash-file-wrapper res-dash-hide">
                     <input name="file" type="file" name="file" id="input__file" class="res-dash-file" accept="image/*,image/jpeg" multiple>
                     <label for="input__file" class="res-dash-input__file-button">
                        <span class="input__file-icon-wrapper"><img class="input__file-icon" src="../assets/icons/camera.svg" alt="Bild hochladen" width="25"></span>
                        <span class="input__file-button-text">Wählen</span>
                     </label>
                  </div>
+                <!-- end of input for picture to upload -->
+
+                <!-- picture in the process of uploading -->
+                <div class="res-dash-file-wrapper">
+                    <figure id="pie" data-behavior="pie-chart"></figure>
+                 </div>
+                <!-- end of picture in the process of uploading -->
+
+
+
+
+                <!-- uploaded preview of the picture -->
+                <div class="res-dash-file-wrapper">
+                    <div class="res-dash-image-preview">
+                        <img class="res-dash-image-preview-image" src="../assets/img/pasta.jpeg"/>
+                        <div class="res-dash-red-cancel"></div>
+                    </div>
+                </div>
+                <!-- end of uploaded preview of the picture  -->
+
+
+
                 <!--  end of form for image upload -->
 
                 <!-- dropdown -->
                 <div class="res-dash-input-wrapper">
                     <label class="res-dash-label" for="input__file">Anzahl Portionen *</label>
                     <select name="select" class="res-dash-select"> <!--Supplement an id here instead of using 'name'-->
+                        <option class="res-dash-select-value" selected disabled value="value0"></option> 
                         <option class="res-dash-select-value" value="value1">1</option> 
                         <option class="res-dash-select-value" value="value2">2</option>
                         <option class="res-dash-select-value" value="value3">3</option>
@@ -69,26 +102,62 @@
                     </select>
                 </div>
                 <!-- end of dropdown -->
-                <!-- Kohdatum -->
+                <!-- Kohdatum on 320px -->
+
+                <div class="res-dash-row-input-wrapper res-dash-kohdatum">
+                    <label class="res-dash-label" for="">Kohdatum *</label>
+                    <input type="date" class="res-dash-input" value={new Date()}>
+                </div>
                 <!-- end of Kohdatum -->
+
+                <!-- Kohdatum calendar -->
+                <!-- <form> -->
+                <label class="res-dash-label" for="preis">
+                    Kohdatum *</label>
+                <div id="calendar" class="res-dash-display-desktop"></div>
+                <!-- </form> -->
+                <!-- end of Kohdatum calendar -->
 
 
                 <!-- Delivery -->
+
                 <label class="res-dash-label" for="input__file">Lieferzeit *</label>
-                <!-- <select multiple>
-                    <option class="res-dash-select-value" value="value1">1</option> 
-                    <option class="res-dash-select-value" value="value2">2</option>
-                    <option class="res-dash-select-value" value="value3">3</option>
-                    <option class="res-dash-select-value" value="value1">4</option> 
-                    <option class="res-dash-select-value" value="value2">5</option>
-                    <option class="res-dash-select-value" value="value3">6</option>
-                </select> -->
+
+                <select class="js-example-basic-multiple" name="" multiple="multiple">
+                    <option value="AL">6.00 - 7.00</option>
+                    <option value="AL">7.00 - 8.00</option>
+                    <option value="AL">8.00 - 9.00</option>
+                </select>
+                <!-- end of delivery -->
 
                 <!-- button -->
                 <div class="res-dash-flex-row-wrapper">
                     <button class="res-dash-inline-button">Alle auswählen</button>
                     <button class="res-dash-inline-button res-dash-delete">Keine auswählen</button>
                 </div>
+
+                <!-- Bestellschluss -->
+
+                <div class="res-dash-row-input-wrapper res-dash-kohdatum">
+                    <label class="res-dash-label" for="">Bestellschluss *</label>
+                    <input type="text" class="res-dash-input" >
+                </div>
+
+                <label class="res-dash-label" for="input__file">Lieferzeit *</label>
+
+                <select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+                    <option value="AL">Alpnach</option>
+                    <option value="AL">Alpnachstad</option>
+                    <option value="AL">Llanfair­pwllgwyngyll­gogery­chw…</option>
+                </select>
+                <!-- end of Bestellschluss -->
+
+                <!-- button -->
+                <div class="res-dash-flex-row-wrapper">
+                    <button class="res-dash-inline-button">Alle auswählen</button>
+                    <button class="res-dash-inline-button res-dash-delete">Keine auswählen</button>
+                </div>
+
             </form>
 
 
@@ -101,7 +170,7 @@
             </button>
         </div>
         <!-- end of button -->
-
+        </div>
 
 
 
@@ -114,7 +183,14 @@
 
     <script src="../libraries/jquery/jquery.min.js"> </script>
     <script src="../libraries/bootstrap/bootstrap.min.js"></script>
-	<script src="../libraries/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../libraries/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script type="text/javascript" src="../js/jquerypie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
     <script src="../js/dashboard.js"> </script>
 </body>
 </html>

@@ -1,9 +1,14 @@
 .ui-widget{
-    width: 320px;
-    max-width: 366px;
+    width: 366px;
+    background-color: #ffffff;
 }
-.ui-datepicker-title{
 
+.ui-widget.ui-widget-content, .ui-widget-header{
+    border: none;
+}
+
+.ui-corder-all{
+    border: none;
 }
 
 .ui-widget-header{
@@ -78,6 +83,36 @@
     align-items: center;
 }
 
+
+
+.ui-state-disabled{
+    color: #bebcbc !important;
+}
+
+.ui-datepicker td span, .ui-datepicker td a{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 8px;
+    display: flex;
+    line-height: 32px;
+}
+
+.ui-datepicker-next .ui-corner-all .ui-state-hover .ui-datepicker-next-hover{
+    background-color: none !important;
+}
+
+td.ui-datepicker-days-cell-over.ui-datepicker-current-day.ui-datepicker-today > a{
+    width: 32px;
+    height: 32px;
+}
+
+#calendar > div > table > tbody > tr:nth-child(3) > td.ui-datepicker-current-day > a{
+    width: 32px;
+    height: 32px;
+}
+
 .ui-state-default:hover{
     background-color: #ebf3f7 !important;
     border-radius: 50%;
@@ -91,14 +126,4 @@
 .ui-state-active{
     background-color: #fdaf3b !important;
     border-radius: 50%;
-}
-
-.ui-state-disabled{
-    color: #bebcbc !important;
-}
-
-.ui-datepicker td span, .ui-datepicker td a{
-    margin: 4px;
-    padding: 7px;
-    display: flex;
 }

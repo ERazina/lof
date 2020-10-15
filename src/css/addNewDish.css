@@ -1,14 +1,31 @@
+
 .res-dash-entyre-wrapper{
     padding: 23px 16px 0 16px;
+}
+
+
+
+.res-dash-row-input-wrapper{
+    display: flex;
+    flex-direction: column;
+
 }
 
 .res-dash-flex-row-wrapper{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .res-dash-h2-padding-bottom{
     padding-bottom: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.res-dash-remove-padding{
+    padding-bottom: 5px;
 }
 
 .res-dash-input{
@@ -98,6 +115,7 @@
 .res-dash-input-wrapper{
     display: flex;
     flex-direction: column;
+    padding-bottom: 40px;
 
 }
 .res-dash-select{
@@ -106,6 +124,7 @@
     border-radius: 2px;
     border: solid 1px #dbdbdb;
     background-color: #ffffff;
+    padding-left: 20px;
 }
 .res-dash-select-value{
     width: 192px;
@@ -165,13 +184,6 @@
     align-items: center;
 }
 
-.res-dash-select{
-    width: 503px !important;
-    height: 128px !important;
-    border-radius: 2px !important;
-    border: 1px solid #dbdbdb !important;
-    background-color: #ffffff !important;
-}
 
 .select{
     width: 503px;
@@ -182,6 +194,111 @@
 }
 
 
+.res-dash-image-preview{
+    display: flex;
+    flex-direction: row;
+}
+.res-dash-image-preview-image{
+    width: 88px;
+    height: 88px;
+    border-radius: 12px;
+    margin-right: 21px;
+}
+
+.res-dash-red-cancel{
+    width: 21px;
+    height: 21px;
+    background-image: url('../assets/icons/close_red.svg');
+    background-repeat: no-repeat;
+    padding-left: 24px;
+
+}
+
+.res-dash-hide{
+    display: none;
+}
+
+.res-dash-file-wrapper{
+    padding-bottom: 19px;
+}
+
+.res-dash-kohdatum{
+    padding-top: 28px;
+    border-top: 2px solid #dedddd;
+}
+
+
+.select2-container{
+    display: block;
+    width: 288px !important;
+    height: 128px;
+    border-radius: 2px;
+    border: solid 1px #dbdbdb;
+    background-color: #ffffff;
+}
+
+.select2-container--default .select2-selection--multiple{
+    border: 0;
+    height: 128px;
+    border-radius: 2px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice{
+    min-width: 128px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #ceebe6;
+    display: inline-flex;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 16px;
+    color: #212123;
+    border: none;
+    position: relative;
+    justify-content: space-around;
+    cursor: default;
+    padding-right: 15px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove{
+    background-color: transparent;
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    color: #212123;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 0 4px;
+    position: absolute;
+    font-weight: 500;
+    padding-right: 5px;
+    right: 10px;
+    top: 5px;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple{
+    border-radius: 2px;
+    border: 1px solid #dbdbdb;
+}
+
+.select2-dropdown{
+    border: 1px solid #dbdbdb;
+}
+
+.select2-container--default .select2-results__option--selected{
+    background-color: #ceebe6;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable{
+    background-color: darken(#ceebe6, 10%);
+    color: #212123;
+}
+
+.res-dash-show-hide-class{
+    display: flex;
+}
+
+
 
 @media screen and (min-width: 768px){
     .res-dash-form-container{
@@ -189,5 +306,29 @@
         padding-right: 16px;
         max-width: 543px;
         margin: auto;
+    }
+
+    .res-dash-show-hide-class{
+        display: none;
+    }
+
+    .res-dash-desktop-card-layout{
+        background-color: #ffffff;
+        width: 740px;
+        border-radius: 12px;
+        box-shadow: 0 9px 13px 0 rgba(0, 0, 0, 0.09);
+        margin: auto;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (min-width: 1378px){
+    .res-dash-desktop-card-layout{
+        background-color: #ffffff;
+        width: 880px;
+        border-radius: 12px;
+        box-shadow: 0 9px 13px 0 rgba(0, 0, 0, 0.09);
+        margin: auto;
+        padding-top: 50px;
     }
 }

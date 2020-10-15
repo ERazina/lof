@@ -36,10 +36,25 @@ $(function(){
 
         // $('.res-dash-select2').select2();
 
-        $( "#calendar" ).datepicker({
-          dayNamesMin: [ "Mo", "Di", "Mi", "Do", "Fr", "Sa", "So" ],
-          functionfirstDay: 1,
-          hideIfNoPrevNext: true,
-          monthNames: ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember']
+        $('.res-dash-red-cancel').on('click', function(){
+          $('.res-dash-image-preview').hide();
+          $('.res-dash-file-wrapper').toggle();
         });
+        
+          $(".js-example-basic-multiple").select2();
+        
+
+        // $('#pie').pieLoader( );
+          $( "#calendar" ).datepicker({
+            dayNamesMin: [ "Mo", "Di", "Mi", "Do", "Fr", "Sa", "So" ],
+            functionfirstDay: 1,
+            hideIfNoPrevNext: true,
+            minDate: new Date(),
+            monthNames: ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember']
+          });
+
+
+
+
+
 });
