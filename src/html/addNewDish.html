@@ -17,6 +17,8 @@
         <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
         <link rel="stylesheet" href="../css/jquerypieloader.css"></script>
+
+        <link rel="stylesheet" href="../css/datetimepicker.min.css"></script>
     
         <link rel="stylesheet" href="./../css/header.css">
         <link rel="stylesheet" href="./../css/dashboard.css">
@@ -140,9 +142,9 @@
 
                 <!-- Bestellschluss -->
 
-                <div class="res-dash-row-input-wrapper res-dash-kohdatum">
+                <div class="res-dash-row-input-wrapper res-dash-kohdatum res-dash-mobile-show">
                     <label class="res-dash-label" for="">Bestellschluss *</label>
-                    <input type="text" class="res-dash-input" >
+                    <input type="date" class="res-dash-input" value={new Date()}>
                 </div>
 
                 <label class="res-dash-label" for="input__file">Lieferzeit *</label>
@@ -194,6 +196,8 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     <script type="text/javascript" src="../js/jquerypie.min.js"></script>
+
+    <script src="../js/datetimepicker.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
     <script src="../js/dashboard.js"> </script>
 </body>
