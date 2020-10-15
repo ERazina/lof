@@ -16,9 +16,12 @@
 
         <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
-        <link rel="stylesheet" href="../css/jquerypieloader.css"></script>
+        <link rel="stylesheet" href="../css/jquerypieloader.css">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.js"></script>
+        <link rel="stylesheet" href="../css/datetimepicker.min.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://snipp.ru/cdn/jQuery-Timepicker-Addon/dist/jquery-ui-timepicker-addon.min.css">
     
         <link rel="stylesheet" href="./../css/header.css">
         <link rel="stylesheet" href="./../css/dashboard.css">
@@ -76,7 +79,6 @@
 
 
 
-
                 <!-- uploaded preview of the picture -->
                 <div class="res-dash-file-wrapper">
                     <div class="res-dash-image-preview">
@@ -124,8 +126,14 @@
 
 
                 <!-- Delivery -->
+                <div class="res-dash-wrapper-container-top-input">
+                    <label class="res-dash-label" for="input__file">Lieferzeit *</label>
+                    <div class="res-dash-flex-row-wrapper res-dash-mobile-hide">
+                        <button class="res-dash-inline-button">Alle auswählen</button>
+                        <button class="res-dash-inline-button res-dash-delete">Keine auswählen</button>
+                    </div>
+                </div>
 
-                <label class="res-dash-label" for="input__file">Lieferzeit *</label>
 
                 <select class="js-example-basic-multiple" name="" multiple="multiple">
                     <option value="AL">6.00 - 7.00</option>
@@ -135,15 +143,15 @@
                 <!-- end of delivery -->
 
                 <!-- button -->
-                <div class="res-dash-flex-row-wrapper">
+                <div class="res-dash-flex-row-wrapper res-dash-mobile-show">
                     <button class="res-dash-inline-button">Alle auswählen</button>
                     <button class="res-dash-inline-button res-dash-delete">Keine auswählen</button>
                 </div>
 
                 <!-- Bestellschluss -->
 
-                <!-- html = '<div class="ui-timepicker-div' + (o.isRTL ? ' ui-timepicker-rtl' : '') + (o.oneLine && o.controlType === 'select' ? ' ui-timepicker-oneLine' : '') + '"><dl>' + '<dt class="ui_tpicker_time_label' + ((o.showTime) ? '' : noDisplay) + '">' + o.timeText + '</dt>' +
-                    '<dd class="ui_tpicker_time '+ ((o.showTime) ? '' : noDisplay) + '"><input class="ui_tpicker_time_input" ' + (o.timeInput ? '' : 'disabled') + '/></dd>'; -->
+                <div id="datetimepicker" class="ui-timepicker-input"></div>
+                    
 
                 <div class="res-dash-row-input-wrapper res-dash-kohdatum res-dash-mobile-show">
                     <label class="res-dash-label" for="">Bestellschluss *</label>
@@ -201,7 +209,8 @@
 
     <script type="text/javascript" src="../js/jquerypie.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.js"></script>
+    <script src="../js/datetimepicker.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>

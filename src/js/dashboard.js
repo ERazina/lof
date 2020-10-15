@@ -55,21 +55,9 @@ $(function(){
 
           $.datepicker.setDefaults($.datepicker.regional['de']);
 
-          /* Локализация timepicker */
-      $.timepicker.regional['de'] = {
-        timeOnlyTitle: 'Выберите время',
-        timeText: 'Время',
-        hourText: 'Uhr',
-        minuteText: 'Minute',
-        timezoneText: 'Часовой пояс',
-        timeFormat: 'HH:mm',
-        isRTL: false
-      };
-      $.timepicker.setDefaults($.timepicker.regional['de']);
-
-      var myControl = {
+      let myControl = {
         create: function(tp_inst, obj, unit, val, min, max, step){
-          $('<input class="ui-timepicker-input" value="'+val+'" style="width:50%">')
+          $('<div class="ui-timepicker-input" value="'+val+'" style="width:50%">')
             .appendTo(obj)
             .spinner({
               min: min,
@@ -100,7 +88,38 @@ $(function(){
         }
       };
 
-      $("#datepicker").datetimepicker({controlType: myControl});
+      jQuery('#datetimepicker').datetimepicker({
+       i18n:{
+        de:{
+         months:[
+          'Januar','Februar','März','April',
+          'Mai','Juni','Juli','August',
+          'September','Oktober','November','Dezember',
+         ],
+         dayOfWeek:[
+          "So.", "Mo", "Di", "Mi", 
+          "Do", "Fr", "Sa.",
+         ]
+        }
+       },
+       format: 'HH:mm', locale: 'de',
+       inline: true,
+       timeFormat: 'HH:mm',
+       timepicker:true,
+       functionfirstDay: 1,
+       format:'d.m.Y HH:MM',
+       showSecond:null,
+       showMillisec:null,
+       showMicrosec:null,
+       showTimezone:null,
+       stepHour: 1,
+       stepMinute: 30,
+       showTimePicker: true,
+       controlType: myControl,
+       minDateTime: new Date(),
+       lang: 'de'
+      });
+
 
 
 

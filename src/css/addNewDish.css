@@ -302,9 +302,20 @@
     display: none;
 }
 
+.res-dash-wrapper-container-top-input{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 
 
 @media screen and (min-width: 768px){
+
+    .select2-container{
+        width: 100% !important;
+    }
     .res-dash-form-container{
         padding-left: 16px;
         padding-right: 16px;
