@@ -319,6 +319,24 @@
         box-shadow: 0 9px 13px 0 rgba(0, 0, 0, 0.09);
         margin: auto;
         padding-top: 50px;
+        margin-bottom: 134px;
+    }
+
+    .res-dash-button-wrapper{
+        border-top: 1px solid #bebcbc;
+        border-radius: 0;
+        justify-content: flex-start;
+        padding-left: 16px;
+        padding-right: 16px;
+        width: 100%;
+    }
+
+    .res-dash-inner-button-container{
+        width: 543px;
+        padding-left: 16px;
+        padding-right: 16px;
+        max-width: 543px;
+        margin: auto;
     }
 }
 
@@ -330,5 +348,6 @@
         box-shadow: 0 9px 13px 0 rgba(0, 0, 0, 0.09);
         margin: auto;
         padding-top: 50px;
+        margin-bottom: 134px;
     }
 }
