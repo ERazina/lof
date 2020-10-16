@@ -143,6 +143,50 @@ td.ui-datepicker-days-cell-over.ui-datepicker-current-day.ui-datepicker-today > 
 
 }
 
+.ui-timepicker-div{
+    display: flex;
+}
+
+.ui_tpicker_time_label{
+    display: none;
+}
+
+.ui_tpicker_time{
+    display: none;
+}
+.ui_tpicker_hour_label{
+    display: none;
+}
+.ui_tpicker_minute_label{
+    display: none;
+}
+
+#datetimepicker > div > div.ui-timepicker-div > dl{
+    display: flex;
+    flex-direction: row;
+}
+
+.ui-timepicker-div{
+    width: 100%;
+}
+
+#datetimepicker > div > div.ui-timepicker-div > dl > dd.ui_tpicker_hour > div > select,
+#datetimepicker > div > div.ui-timepicker-div > dl > dd.ui_tpicker_minute > div > select{
+    width: 80px;
+    height: 49px;
+    border: solid 1px #dbdbdb;
+}
+
+.ui-timepicker-div dl dd{
+    margin: 0 10px 10px 22%;
+}
+
+#datetimepicker > div > div.ui-timepicker-div > dl > dd.ui_tpicker_hour > div > select:hover,
+#datetimepicker > div > div.ui-timepicker-div > dl > dd.ui_tpicker_minute > div > select:hover{
+    background-color: white !important;
+    border-radius: 0;
+}
+
 @media screen and (min-width: 768px){
     .ui-widget{
         width: 366px;

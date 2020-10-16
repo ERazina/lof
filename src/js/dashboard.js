@@ -55,38 +55,7 @@ $(function(){
 
           $.datepicker.setDefaults($.datepicker.regional['de']);
 
-      let myControl = {
-        create: function(tp_inst, obj, unit, val, min, max, step){
-          $('<div class="ui-timepicker-input" value="'+val+'" style="width:50%">')
-            .appendTo(obj)
-            .spinner({
-              min: min,
-              max: max,
-              step: step,
-              change: function(e,ui){
-                if(e.originalEvent !== undefined)
-                  tp_inst._onTimeChange();
-                tp_inst._onSelectHandler();
-              },
-              spin: function(e,ui){
-                tp_inst.control.value(tp_inst, obj, unit, ui.value);
-                tp_inst._onTimeChange();
-                tp_inst._onSelectHandler();
-              }
-            });
-          return obj;
-        },
-        options: function(tp_inst, obj, unit, opts, val){
-          if(typeof(opts) == 'string' && val !== undefined)
-            return obj.find('.ui-timepicker-input').spinner(opts, val);
-          return obj.find('.ui-timepicker-input').spinner(opts);
-        },
-        value: function(tp_inst, obj, unit, val){
-          if(val !== undefined)
-            return obj.find('.ui-timepicker-input').spinner('value', val);
-          return obj.find('.ui-timepicker-input').spinner('value');
-        }
-      };
+
 
       jQuery('#datetimepicker').datetimepicker({
        i18n:{
@@ -102,30 +71,20 @@ $(function(){
          ]
         }
        },
-       format: 'HH:mm', locale: 'de',
-       inline: true,
-       timeFormat: 'HH:mm',
+       format: 'HH:MM', locale: 'de',
+       inline: false,
+       timeFormat: 'HH:MM',
        timepicker:true,
-       functionfirstDay: 1,
+       firstDay: 1,
        format:'d.m.Y HH:MM',
-       showSecond:null,
-       showMillisec:null,
-       showMicrosec:null,
-       showTimezone:null,
        stepHour: 1,
        stepMinute: 30,
        showTimePicker: true,
-       controlType: myControl,
        minDateTime: new Date(),
        lang: 'de',
        timeText: "Stunde",
        hourText: 'Uhr', 
-       minuteText: "Minute"
+       minuteText: "Minute",
+       controlType: 'select',
       });
-
-
-
-
-
-
 });
