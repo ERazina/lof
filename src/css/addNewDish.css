@@ -310,7 +310,27 @@
     justify-content: space-between;
 }
 
+.res-dash-loader{
+    width: 32px;
+    height: 32px;
+    background-color: #39a7a0;
+    border-radius: 50%;
+    -webkit-animation: back 5s infinite; /* Safari 4+ */
+    -moz-animation:    back 5s infinite; /* Fx 5+ */
+    -o-animation:      back 5s infinite; /* Opera 12+ */
+    animation:         back 5s infinite; /* IE 10+, Fx 29+ */
+  }
 
+  @keyframes back {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
 
 @media screen and (min-width: 768px){
 
